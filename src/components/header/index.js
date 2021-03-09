@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Switch from 'react-switch';
+
 import { 
     Toolbar,
     IconButton,
@@ -15,10 +17,13 @@ import VideoCall from '@material-ui/icons/VideoCall';
 
 
 import { AppBar, Grow} from './styled';
+import { ThemeContext } from 'styled-components';
  
 
 
 function Header(props) {
+  const { colors, title } = useContext(ThemeContext);
+  
   return (
     <div>
       <AppBar >
@@ -30,10 +35,21 @@ function Header(props) {
             <MenuIcon />
           </IconButton>
             <img
-            src='/images/preto.png'
+            src={title === 'dark' ? '/images/branca.png' : '/images/preto.png'}
             alt='logo'
           />
           <Grow />
+          <Switch 
+                    onChange={props.toggleTheme}
+                    checked={title === 'dark'}
+                    checkedIcon={false}
+                    uncheckedIcon={false}
+                    height={10}
+                    width={40}
+                    handleDiameter={20}
+                    offColor=''
+                    onColor='white'
+                /> 
           <IconButton>
             <VideoCall />
           </IconButton>

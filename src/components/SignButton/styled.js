@@ -7,7 +7,7 @@ export const Button = styled.button `
     border: 2px solid blue;
     border-radius: 3px;
     display: flex;
-    color: #000;
+    color: ${props => props.theme.colors.text};
     background: transparent;
     align-items: center;
     cursor: pointer;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core';
 
 export const Drawer = styled.div `
     width: 240;
@@ -25,16 +26,27 @@ export const Drawer = styled.div `
     background: #888;
     }
 `
-export const listItemText = styled.div`
-    font-size: 14;
-` 
-export const listItem = styled.div`
-    padding-top: 4;
-    padding-bottom: 4;
+export const ListSubheader = styled.div`
+      text-transform: uppercase;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      color: ${props => props.theme.colors.text};
 `
-export const ListSubheader= styled.div`
-    text-transform: 'uppercase';
-` 
+
+export const useStyles = makeStyles((props) => ({
+
+    drawer: {
+      width: 240,
+    },
+    listItemText: {
+      fontSize: 14,
+    },
+    listItem: {
+      paddingTop: 4,
+      paddingBottom: 4,
+    },    
+})); 
 
 
   

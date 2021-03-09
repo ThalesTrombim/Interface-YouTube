@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { useStyles } from '../../Styles/MaterialStyles'
+import { useStyles } from './styled';
 
 import { 
     Toolbar,
@@ -11,7 +11,6 @@ import {
     ListItem,
     ListItemIcon,
     ListItemText,
-    ListSubheader,
     Box,
  } from '@material-ui/core';
 
@@ -23,7 +22,7 @@ import VideoLibrary from '@material-ui/icons/VideoLibrary';
 import History from '@material-ui/icons/History';
 import AddCircle from '@material-ui/icons/AddCircle';
 
-import { Drawer } from './styled';
+import { Drawer, ListSubheader } from './styled';
 import SignButton from '../SignButton';
 
 function SideBar() {
@@ -87,7 +86,7 @@ function SideBar() {
               <Divider />
               <Box p={7}>
                 <Typography variant='body2'>
-                  Faça login para curtur vídeos, comentar e se inscrever.
+                  Faça login para curtir vídeos, comentar e se inscrever.
                 </Typography>
                 <Box mt={2}>
                   <SignButton />
@@ -98,11 +97,7 @@ function SideBar() {
                 component='nav'
                 aria-labelledby='nested-list-subheader'
                 subheader={
-                  <ListSubheader
-                    component='div'
-                    id='nested-list-subheader'
-                    className={classes.subheader}
-                  >
+                  <ListSubheader>
                     O Melhor do youtube
                   </ListSubheader>
                 }
