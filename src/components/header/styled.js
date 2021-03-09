@@ -14,3 +14,9 @@ export const AppBar =styled.div`
 export const Grow = styled.div`
     flex-grow: 1;
 `
+export const ModeButton =styled.button`
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+`

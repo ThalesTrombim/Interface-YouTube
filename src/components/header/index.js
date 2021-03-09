@@ -15,11 +15,12 @@ import Apps from '@material-ui/icons/Apps';
 import MoreVert from '@material-ui/icons/MoreVert';
 import VideoCall from '@material-ui/icons/VideoCall';
 
+import Brightness6Icon from '@material-ui/icons/Brightness6';
+import Brightness3Icon from '@material-ui/icons/Brightness3';
 
-import { AppBar, Grow} from './styled';
+import { AppBar, Grow, ModeButton } from './styled';
 import { ThemeContext } from 'styled-components';
  
-
 
 function Header(props) {
   const { colors, title } = useContext(ThemeContext);
@@ -39,7 +40,7 @@ function Header(props) {
             alt='logo'
           />
           <Grow />
-          <Switch 
+          {/* <Switch 
                     onChange={props.toggleTheme}
                     checked={title === 'dark'}
                     checkedIcon={false}
@@ -49,7 +50,11 @@ function Header(props) {
                     handleDiameter={20}
                     offColor=''
                     onColor='white'
-                /> 
+                />  */}
+          <ModeButton onClick={props.toggleTheme}
+          >
+            {title === 'dark' ? <Brightness6Icon/> : <Brightness3Icon />}
+          </ModeButton>
           <IconButton>
             <VideoCall />
           </IconButton>
