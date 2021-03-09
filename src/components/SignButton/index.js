@@ -8,7 +8,8 @@ function SignButton () {
         <div>
             <Button>
                 <AccountCircle />
-                fazer login
+                <div/>
+                FAZER LOGIN
             </Button>
         </div>
     );

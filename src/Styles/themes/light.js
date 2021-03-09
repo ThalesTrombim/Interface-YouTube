@@ -7,7 +7,7 @@ export default {
         sign: '#3EA6FF',
         background: '#fff',
         headerBackground: '#F4F6F8', 
-        sideBarBackground: '#fff',
+        sideBarBackground: '#F4F6F8',
         text: '#4F4F4F',
     }
 }

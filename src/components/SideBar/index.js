@@ -84,7 +84,7 @@ function SideBar() {
                 </ListItem>
               </List>
               <Divider />
-              <Box p={7}>
+              <Box p={5}>
                 <Typography variant='body2'>
                   Faça login para curtir vídeos, comentar e se inscrever.
                 </Typography>
