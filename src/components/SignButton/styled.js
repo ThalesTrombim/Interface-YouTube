@@ -5,13 +5,18 @@ export const Button = styled.button `
     font-weight: bold;
     padding: 5px 10px;
     width: 150px;
-    height: 60px;
-    border: 2px solid blue;
+    height: 50px;
+    border: 2px solid #3EA6FF;
     border-radius: 3px;
     display: flex;
-    color: ${props => props.theme.colors.text};
+    color: #3EA6FF;
     background: transparent;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    img {
+        width: 20px;
+        height: 20px; 
+        color: blue;
+    }
 `

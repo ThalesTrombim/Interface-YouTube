@@ -9,5 +9,8 @@ export default {
         headerBackground: '#232323', 
         sideBarBackground: '#232323',
         text: '#fff',
+
+        scrollBar: '#696969',
+        scrollHover: '#888',
     }
 }

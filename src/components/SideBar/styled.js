@@ -15,15 +15,15 @@ export const Drawer = styled.div `
     }
 
     ::-webkit-scrollbar-track {
-    background: #232323;
+    background: ${props => props.theme.colors.sideBarBackground};
     }
 
     ::-webkit-scrollbar-thumb {
-    background: #696969;
+    background: ${props => props.theme.colors.scrollBar};
     }
 
     ::-webkit-scrollbar-thumb:hover {
-    background: #888;
+    background: ${props => props.theme.colors.scrollHover};
     }
 `
 export const ListSubheader = styled.div`
